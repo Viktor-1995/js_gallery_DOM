@@ -8,9 +8,9 @@ el.addEventListener('click', ChangeImg);
 function ChangeImg(e) {
   e.preventDefault();
 
-  if (!e.target.src) {
-    largeImg.src = e.target.querySelector('img').src;
+  if (!e.target.href) {
+    largeImg.src = e.target.parentElement.href;
   } else {
-    largeImg.src = e.target.src;
+    largeImg.src = e.target.href;
   }
 }
