@@ -9,7 +9,7 @@ function ChangeImg(e) {
   e.preventDefault();
 
   if (!e.target.href) {
-    largeImg.src = e.target.parentElement.href;
+    largeImg.src = e.target.closest('a').href;
   } else {
     largeImg.src = e.target.href;
   }
